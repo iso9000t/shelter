@@ -1,0 +1,546 @@
+                                                        /* COMMON */
+
+.wrapper {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+   
+    
+}
+
+h1 {
+    font-family: 'Georgia', 'Gelasio', serif;
+    color: rgba(241, 205, 179, 1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    margin: 0;
+    letter-spacing: 0.06em;
+    position: absolute;
+    /*background-color: red; h1 area test*/
+    top: 3.43rem;
+    left: 2.4rem;
+
+}
+
+h2 {
+    position: absolute;
+    font-family: 'Arial', 'Arimo', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 1);
+    margin: 0;
+    padding: 0;
+    top: 6.2499999999999964rem;
+    left: 2.65rem;
+
+}
+
+
+body {
+    /*overflow-x: hidden;*/
+    position: relative;
+}
+
+
+                                                        /* START SCREEN */
+header {
+/*background-color: aqua; // header area test*/
+height: 100px;
+position: relative;
+
+}
+
+
+
+nav {
+    /*background-color: rgb(251, 1, 1); nav area test*/
+    left: 47.76rem;
+    top: 4.5rem;
+    position: absolute;
+    display: inline;
+    box-sizing: content-box;
+    
+}
+
+nav .active {
+    cursor: pointer;
+    padding-bottom: 3px;
+    color: rgb(250,250,250);
+    border-bottom: 3px solid rgb(241, 205, 179);
+}
+
+a {
+    text-decoration: none;
+}
+
+nav a {
+    color: #CDCDCD;
+    font-family:'Arial', 'Arimo', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 160%;
+    letter-spacing: 0px;
+    margin-left: 1.975rem;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    
+}
+
+nav a:hover {
+    color: rgb(250, 250, 250);
+    
+}
+
+
+nav a:active{
+    position: relative;
+    top: 1px;
+}
+
+
+.start-screen {
+    background: url(/assets/images/noise_transparent@2x.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%)
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #211F20;
+
+    height: 908px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.not-only-header {
+    font-family: 'Georgia','Gelasio', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 130%;
+    /* or 57px */
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    width: 310px;
+    left: 1.79rem;
+    top: 14.56rem;
+    margin: 10px;
+   
+
+}
+  
+
+main {
+
+ /*  height: 300px; main area test
+/*background-color: rgb(217, 69, 182);// main area test*/
+position: relative;
+ 
+}
+    
+.main-puppy {
+
+    position: absolute;
+    left: 31.9rem;
+    top: 5rem;
+
+}
+
+
+.start-screen-content {
+
+    color: rgba(205, 205, 205, 1);
+    font-family: 'Arial', 'Arimo', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    position: absolute;
+    top: 24.370000000000004rem;
+    left: 1.82rem;
+    margin: 10px;
+
+
+}
+
+
+
+.start-screen-button {
+    color: #292929;
+    background: #F1CDB3;
+    border-radius: 100px
+    display: inline-block;
+    padding: 15px 45px;
+    border: none;
+    border-radius: 100px;
+    font-family: 'Georgia', 'Gelasio', serif;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    position: absolute;
+    left: 2.41rem;
+    top: 32.1rem;
+    transition: background-color 0.5s ease;
+}
+
+.start-screen-button:hover {
+    background: #FDDCC4;
+}
+
+                                                    /* ABOUST SCREEN */
+
+.about-section {
+    background: white;
+    height: 588px;
+    width: 100%;
+    position: absolute;
+    top: 908px;
+    left: 0;
+}
+
+section {
+    position: relative;
+}
+.about-header {
+
+    font-family: 'Georgia', 'Gelasio', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    /* or 45px */
+    letter-spacing: 0.06em;
+    /* color-dark-l */
+    color: #545454;
+    left: 39.60000000000003rem;
+    top: 3.3999999999999995rem;
+    position: absolute;
+
+}
+
+.about-content {
+    width: 34%;
+    position: absolute;
+    font-family: 'Arial', 'Arimo', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+        /* or 24px */
+        /* color-dark-xl */
+    color: #4C4C4C;
+    position: absolute;
+    left: 39.6rem;
+    top: 11.9rem;
+}
+
+.about-pets {
+
+    position: absolute;
+    left: 11.5rem;
+    top: 4.7rem;
+
+}
+                                                        /* OUR FRIENDS SECTION */
+
+
+.our-friends {
+
+    background: #F6F6F6;
+    height: 877px;
+    width: 100%;
+    position: absolute;
+    top: 1496px;
+    left: 0;
+
+}
+
+.our-friends-header {
+
+    position: absolute;
+    font-family: 'Georgia', 'Gelasio', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    /* or 45px */
+    letter-spacing: 0.06em;
+    color: #545454;
+    text-align: center;
+    left: 27.43rem;
+    top: 2.5rem;
+
+}
+                                                            /* LEFT ARROW BUTTON*/
+.left-arrow-button {
+    width: 60px;
+    height: 60px;
+    background-image: url(/assets/icons/button-arrow-left.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    position: absolute;
+    background-color: transparent;
+    left: 2.1rem;
+    top: 25.82rem;  
+    transition: background-image 0.5s ease
+      
+        
+}
+
+.left-arrow-button:hover {
+    background-image: url(/assets/icons/button-arrow-hover.svg);
+    cursor: pointer;
+}
+
+.right-arrow-button {
+    width: 60px;
+    height: 60px;
+    background-image: url(/assets/icons/button-arrow-left.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    position: absolute;
+    background-color: transparent;
+    right: 1.1rem;
+    top: 25.82rem;
+    transition: background-image 0.5s ease;
+    transform: scaleX(-1);
+}
+
+.right-arrow-button:hover {
+    background-image: url(/assets/icons/button-arrow-hover.svg);
+    cursor: pointer;
+}
+                                                                /* CARDS */
+
+                                                    /*//////////// KATRINE ////////// */
+.card-body{
+    width: 270px;
+    height: 435px;
+    background: #FAFAFA;
+    border-radius: 9px;
+    position: relative;
+    transition: box-shadow 0.4s ease;
+}
+
+.card-body:hover{
+    box-shadow: 10px 12px 21px 0px rgba(0, 0, 0, 0.33);
+        -webkit-box-shadow: 10px 12px 21px 0px rgba(0, 0, 0, 0.33);
+        -moz-box-shadow: 10px 12px 21px 0px rgba(0, 0, 0, 0.33);
+        cursor: pointer;
+}
+
+.card-button {
+    position: absolute;
+    background-color: transparent;
+    padding: 0.86rem 43px;
+    border: 2px solid #F1CDB3;
+    left: 2.55rem;
+    top: 21.98rem;
+    color: #292929;
+    display: inline-block;
+    border-radius: 100px;
+    font-family: 'Georgia', 'Gelasio', serif;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    position: absolute;
+    transition: background-color 0.5s ease;
+
+}
+
+.card-button:hover {
+    cursor: pointer;
+    background: #FDDCC4;
+    border: 2px solid #FDDCC4;
+
+}
+
+.card-katrine {
+    position: absolute;
+    top: 14.1rem;
+    left: 8.95rem;
+}
+
+.card-katrine h3 {
+    position: relative;
+    left: 0.03rem;
+    top: 0.34rem;
+    text-align: center;
+    font-family: 'Georgia', 'Gelasio', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+/* identical to box height */
+
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #292929;
+}
+                                            /*//////////// JENNIFER ////////// */
+
+
+
+
+.card-jennifer {
+    position: absolute;
+    top: 14.1rem;
+    left: 31.43rem;
+}
+
+.card-jennifer h3 {
+    position: relative;
+    left: 0.1rem;
+    top: 0.35rem;
+    text-align: center;
+    font-family: 'Georgia', 'Gelasio', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    /* identical to box height */
+
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #292929;
+}
+
+                                           /*//////////// WOODY ////////// */
+
+
+.card-woody {
+    position: absolute;
+    top: 14.1rem;
+    left: 53.95rem;
+}
+
+.card-woody h3 {
+    position: relative;
+    left: 0.03rem;
+    top: 0.35rem;
+    text-align: center;
+    font-family: 'Georgia', 'Gelasio', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    /* identical to box height */
+
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #292929;
+}
+
+                                                    /* GET TO KNOW THE REST BUTTON */
+
+
+.know-rest-button {
+    position: absolute;
+    background-color: #F1CDB3;
+    padding: 0.86rem 45px;  
+    left: 31.8rem;
+    top:45.15rem;
+    color: #292929;
+    display: inline-block;
+    border-radius: 100px;
+    font-family: 'Georgia', 'Gelasio', serif;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    position: absolute;
+    transition: background-color 0.5s ease;
+
+}
+
+.know-rest-button:hover {
+
+    background-color: #FDDCC4;
+}
+
+                                            /* HOW YOU CAN HELP OUR SHELTER */
+
+.help-shelter {
+   
+    background: white;
+    height: 611px;
+    width: 100%;
+    position: absolute;
+    top: 2373px;
+    left: 0;
+}
+
+.help-shelter-header {
+    
+    position: absolute;
+    font-family: 'Georgia', 'Gelasio', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    /* or 45px */
+    letter-spacing: 0.06em;
+    color: #545454;
+    text-align: center;
+    left: 28.45rem;
+    top: 2.5rem;
+    width: 23rem;
+    
+}
+
+
+                                                            /* HELP ICONS */
+
+h4 {
+    margin: 0;
+    padding: 0;
+    font-family: "Georgia", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #545454;
+}
+
+
+.icons-container {
+    position: absolute;
+    top: 20rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 119px;
+    grid-row-gap: 35px;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.icon {
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
