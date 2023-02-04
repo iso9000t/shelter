@@ -1,4 +1,4 @@
-                                                        /* COMMON */
+                                               wr         /* COMMON */
 
 .wrapper {
     max-width: 1200px;
@@ -45,10 +45,13 @@ h2 {
 
 body {
     /*overflow-x: hidden;*/
-    position: relative;
+    
 }
 
-
+.layout {
+    position: relative;
+    
+}
                                                         /* START SCREEN */
 header {
 /*background-color: aqua; // header area test*/
@@ -114,6 +117,7 @@ nav a:active{
     position: absolute;
     top: 0;
     left: 0;
+
 }
 
 .not-only-header {
@@ -490,8 +494,8 @@ section {
     letter-spacing: 0.06em;
     color: #545454;
     text-align: center;
-    left: 28.45rem;
-    top: 2.5rem;
+    left: 35.5vw;
+    top: 7.3vh;
     width: 23rem;
     
 }
@@ -499,7 +503,7 @@ section {
 
                                                             /* HELP ICONS */
 
-h4 {
+.icon h4 {
     margin: 0;
     padding: 0;
     font-family: "Georgia", serif;
@@ -509,24 +513,30 @@ h4 {
     line-height: 115%;
     letter-spacing: 0.06em;
     color: #545454;
+    margin-top: 25px;
 }
 
 
 .icons-container {
-    position: absolute;
-    top: 20rem;
+  
+    position: relative;;
+    top: 40.8vh;
+    right: -0.7vw;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 119px;
-    grid-row-gap: 35px;
+    gap: 21.6vh;
+    grid-row-gap: 10.3vh;
     text-align: center;
-    align-items: center;
+    align-items: flex-end;
     
 }
 
-.icon {
-    
+
+.donation-container {
+
+height: ;
+
 }
 
 
