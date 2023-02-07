@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/pages/main/normalize.css" />
     <link rel="stylesheet" href="/pages/main/style.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Gelasio:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
     />
 
     <title>Cozy House. Shelter for pets in Boston</title>
@@ -19,15 +21,16 @@
     <div class="layout">
       <div class="start-screen">
         <header class="wrapper">
-          <a href="#"><h1>Cozy House</h1></a>
+          <div class="logo">
+            <a href="#"><h1 class="logo-header">Cozy House</h1></a>
 
-          <h2>Shelter for pets in Boston</h2>
-
+            <h2 class="logo-subheader">Shelter for pets in Boston</h2>
+          </div>
           <nav>
-            <a href="" class="active">About the shelter</a>
+            <a href="#about" class="active">About the shelter</a>
             <a href="">Our pets</a>
-            <a href="">Help the shelter</a>
-            <a href="">Contacts</a>
+            <a href="#help">Help the shelter</a>
+            <a href="#contacts">Contacts</a>
           </nav>
         </header>
 
@@ -44,7 +47,7 @@
 
             <img
               src="/assets/images/start-screen-puppy.png"
-              class="main-puppy wrapper"
+              class="main-puppy"
               alt="Cute puppy"
             />
           </div>
@@ -109,7 +112,7 @@
             </div>
             <button class="right-arrow-button"></button>
           </div>
-          <a href="#" class="know-rest-button">Get to know the rest</a>
+          <a href="" class="know-rest-button">Get to know the rest</a>
         </section>
       </div>
       <div class="help-shelter">
@@ -166,8 +169,53 @@
         </section>
       </div>
       <div class="donation-container">
-        <section class="wrapper" id="donation"></section>
+        <section class="wrapper" id="donation">
+          <h3 class="donation-header">You can also make a donation</h3>
+          <h5 class="donation-subheader">
+            Name of the bank / Type of bank account
+          </h5>
+          <a href="#" class="credit-card">
+            <img src="/assets/icons/credit-card.svg" alt="Credit card" />
+            <h4 class="card-number">8380 2880 8028 8791 7435</h4>
+          </a>
+
+          <p class="legal-info">
+            Legal information and lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed
+            ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et
+            malesuada fames ac ante ipsum primis in faucibus.
+          </p>
+          <img
+            src="/assets/images/donation-dog.png"
+            alt="Donation dog"
+            class="donation-dog"
+          />
+        </section>
       </div>
+      <footer class="main-footer" id="contacts">
+        <h3 class="footer-header">For questions and suggestions</h3>
+        <h3 class="footer-subheader">We are waiting for your visit</h3>
+
+        <div class="contacts">
+          <div class="email">
+            <img src="/assets/icons/mail.svg" alt="E-mail icon" />
+            <a href="mailto:email@shelter.com" target="_blank"><h4>email@shelter.com</h4></a>
+          </div>
+          <div class="phone">
+            <img src="/assets/icons/phone.svg" alt="Phone icon">
+            <a href="tel:+136745677554" target="_blank"><h4>+13 674 567 75 54</h4></a>
+          </div>
+          <div class="address-boston">
+            <img src="/assets/icons/pin.svg" alt="Pin icon">
+            <a href="https://goo.gl/maps/j4JzUkXVWJD4cvJM7" target="_blank"><h4>1 Central Street, Boston<br>(entrance from the store)</h4></a>
+          </div>
+          <div class="address-london">
+            <img src="/assets/icons/pin.svg" alt="Pin icon">
+            <a href="https://goo.gl/maps/XxNSaGfUtX1VVo8dA" target="_blank"><h4>18 South Park, London</h4></a>
+          </div>
+        </div>
+        <img src="/assets/images/footer-puppy.png" alt="Happy dog" class="footer-puppy">
+      </footer>
     </div>
   </body>
 </html>
