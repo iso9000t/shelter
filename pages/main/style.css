@@ -40,11 +40,10 @@ h2 {
     align-items: flex-start;
 }
 .logo-header {
-   
-
-
+ 
 
 }
+
 .logo-subheader {
 margin-left: 4px;
 margin-top: 9px;
@@ -111,6 +110,7 @@ nav a {
     text-decoration: none;
     transition: color 0.2s ease;
     
+    
 }
 
 nav a:hover {
@@ -120,8 +120,9 @@ nav a:hover {
 
 
 nav a:active{
-    /* position: relative;
-    top: 1px; */
+    position: relative;
+
+    transform: scale(.98);
 }
 
 
@@ -813,7 +814,7 @@ position: absolute;
 }
 
 .contacts a {
-     transition: transform .1s ease-in-out;
+     transition: transform .1s ease;
  }
 
  .contacts a:hover {
