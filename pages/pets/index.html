@@ -20,28 +20,32 @@
   <body>
     <div class="layout">
       <div class="header-background">
-        <header class="wrapper">
-          <div class="logo">
-            <a href="/pages/main/index.html"><h1 class="logo-header">Cozy House</h1></a>
+        <div class="wrapper">
+          <header>
+            <div class="logo">
+              <a href="/pages/main/index.html"
+                ><h1 class="logo-header">Cozy House</h1></a
+              >
 
-            <h2 class="logo-subheader">Shelter for pets in Boston</h2>
-          </div>
-          <nav>
-            <a href="/pages/main/index.html#about">About the shelter</a>
-            <a href="#" class="active">Our pets</a>
-            <a href="/pages/main/index.html#help">Help the shelter</a>
-            <a href="#contacts">Contacts</a>
-          </nav>
-        </header>
+              <h2 class="logo-subheader">Shelter for pets in Boston</h2>
+            </div>
+            <nav>
+              <a href="/pages/main/index.html#about">About the shelter</a>
+              <a href="#" class="active">Our pets</a>
+              <a href="/pages/main/index.html#help">Help the shelter</a>
+              <a href="#contacts">Contacts</a>
+            </nav>
+          </header>
+        </div>
       </div>
       <main class="our-friends-background">
         <section class="wrapper" id="our-friends">
           <h3 class="our-friends-header">
-            Our friends who<br>are looking for a house
+            Our friends who<br />are looking for a house
           </h3>
           <div class="slider-button-container">
             <div class="slider">
-              <div class="card-katrine">
+              <div class="card" id="card-1">
                 <div class="card-body">
                   <img
                     src="/assets/images/pets-katrine.png"
@@ -52,7 +56,7 @@
                 </div>
               </div>
 
-              <div class="card-jennifer">
+              <div class="card" id="card-2">
                 <div class="card-body">
                   <img
                     src="/assets/images/pets-jennifer.png"
@@ -63,7 +67,7 @@
                 </div>
               </div>
 
-              <div class="card-woody">
+              <div class="card" id="card-3">
                 <div class="card-body">
                   <img
                     src="/assets/images/pets-woody.png"
@@ -74,7 +78,7 @@
                 </div>
               </div>
 
-              <div class="card-sophia">
+              <div class="card" id="card-4">
                 <div class="card-body">
                   <img
                     src="/assets/images/pets-sophia.png"
@@ -85,7 +89,7 @@
                 </div>
               </div>
 
-              <div class="card-timmy">
+              <div class="card" id="card-5">
                 <div class="card-body">
                   <img
                     src="/assets/images/pets-timmy.png"
@@ -96,7 +100,7 @@
                 </div>
               </div>
 
-              <div class="card-charly">
+              <div class="card" id="card-6">
                 <div class="card-body">
                   <img src="/assets/images/pets-charly.png" alt="Dog Charly" />
                   <h3>Charly</h3>
@@ -104,7 +108,7 @@
                 </div>
               </div>
 
-              <div class="card-scarlett">
+              <div class="card" id="card-7">
                 <div class="card-body">
                   <img
                     src="/assets/images/pets-scarlett.png"
@@ -115,7 +119,7 @@
                 </div>
               </div>
 
-              <div class="card-freddie">
+              <div class="card" id="card-8">
                 <div class="card-body">
                   <img
                     src="/assets/images/pets-freddie.png"
@@ -137,43 +141,56 @@
           </div>
         </section>
       </main>
-      <footer class="main-footer" id="contacts">
-        <h3 class="footer-header">For questions and suggestions</h3>
-        <h3 class="footer-subheader">We are waiting for your visit</h3>
-
-        <div class="contacts">
-          <div class="email">
-            <img src="/assets/icons/mail.svg" alt="E-mail icon" />
-            <a href="mailto:email@shelter.com" target="_blank"
-              ><h4>email@shelter.com</h4></a
-            >
-          </div>
-          <div class="phone">
-            <img src="/assets/icons/phone.svg" alt="Phone icon" />
-            <a href="tel:+136745677554" target="_blank"
-              ><h4>+13 674 567 75 54</h4></a
-            >
-          </div>
-          <div class="address-boston">
-            <img src="/assets/icons/pin.svg" alt="Pin icon" />
-            <a href="https://goo.gl/maps/j4JzUkXVWJD4cvJM7" target="_blank"
-              ><h4>
-                1 Central Street, Boston<br />(entrance from the store)
-              </h4></a
-            >
-          </div>
-          <div class="address-london">
-            <img src="/assets/icons/pin.svg" alt="Pin icon" />
-            <a href="https://goo.gl/maps/XxNSaGfUtX1VVo8dA" target="_blank"
-              ><h4>18 South Park, London</h4></a
-            >
+      <footer class="main-footer-section" id="contacts">
+        <div class="wrapper">
+          <div class="footer-container">
+            <div class="footer-text">
+              <div class="contacts">
+                <h3 class="footer-header">For questions and suggestions</h3>
+                <div class="email">
+                  <img src="/assets/icons/mail.svg" alt="E-mail icon" />
+                  <a href="mailto:email@shelter.com" target="_blank"
+                    ><h4>email@shelter.com</h4></a
+                  >
+                </div>
+                <div class="phone">
+                  <img src="/assets/icons/phone.svg" alt="Phone icon" />
+                  <a href="tel:+136745677554" target="_blank"
+                    ><h4>+13 674 567 75 54</h4></a
+                  >
+                </div>
+              </div>
+              <div class="location">
+                <h3 class="footer-subheader">We are waiting for your visit</h3>
+                <div class="address-boston">
+                  <img src="/assets/icons/pin.svg" alt="Pin icon" />
+                  <a
+                    href="https://goo.gl/maps/j4JzUkXVWJD4cvJM7"
+                    target="_blank"
+                    ><h4>
+                      1 Central Street, Boston<br />(entrance from the store)
+                    </h4></a
+                  >
+                </div>
+                <div class="address-london">
+                  <img src="/assets/icons/pin.svg" alt="Pin icon" />
+                  <a
+                    href="https://goo.gl/maps/XxNSaGfUtX1VVo8dA"
+                    target="_blank"
+                    ><h4>18 South Park, London</h4></a
+                  >
+                </div>
+              </div>
+            </div>
+            <img
+              src="/assets/images/footer-puppy.png"
+              alt="Happy dog"
+              class="footer-puppy"
+              width="300"
+              height="310"
+            />
           </div>
         </div>
-        <img
-          src="/assets/images/footer-puppy.png"
-          alt="Happy dog"
-          class="footer-puppy"
-        />
       </footer>
     </div>
   </body>

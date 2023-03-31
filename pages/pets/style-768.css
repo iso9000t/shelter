@@ -9,17 +9,17 @@ html {
 
 
 
- .wrapper {
-     max-width: 120rem;
-     margin-left: auto;
-     margin-right: auto;
-     margin-top: 0;
-     margin-bottom: 0;
-     padding: 0 3rem 0 3rem;
+.wrapper {
+    max-width: 120rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0 3rem 0 3rem;
 
 
 
- }
+}
 
 
 h1 {
@@ -93,7 +93,7 @@ header {
 }
 
 .logo {
- 
+
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -152,12 +152,13 @@ nav a:active {
     transform: scale(.98);
 }
 
-                    /* OUR FRIENDS SECTION */
+/* OUR FRIENDS SECTION */
 
 
 .our-friends-background {
     background: #F6F6F6;
     min-height: 173.3rem;
+
 
 }
 
@@ -169,21 +170,24 @@ nav a:active {
 }
 
 .slider {
-display: grid;
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     row-gap: 3rem;
     column-gap: 4rem;
     padding-top: 2.9rem;
 }
+
 .card:nth-child(8) .card-body {
-    display: none;;
+    display: none;
+    ;
 }
 
 .card:nth-child(7) .card-body {
     display: none;
     ;
 }
+
 .card-body {
     width: 27rem;
     height: 43.5rem;
@@ -234,7 +238,7 @@ display: grid;
     flex-direction: column;
     gap: 0.9rem;
     align-items: center;
-   
+
 }
 
 
@@ -293,7 +297,12 @@ display: grid;
 
 }
 
-/* CONTACTS */
+.our-friends-background .wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+
 .main-footer-section {
     min-height: 63.9rem;
 
