@@ -15,12 +15,30 @@ html {
     margin-right: auto;
     margin-top: 0;
     margin-bottom: 0;
-    padding: 0 3rem 0 3rem;
-
-
+    padding: 0 1rem 0 1rem;
+    overflow-x: hidden;
 
 }
 
+.burger {
+    top: 2rem;
+    right: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-right: 4.3rem;
+    margin-top: 2rem;
+
+}
+
+
+
+.line {
+
+    width: 2.8rem;
+
+    border: 0.1rem solid #000000
+}
 
 h1 {
     font-family: 'Georgia', 'Gelasio', serif;
@@ -49,19 +67,22 @@ h2 {
 
 h3 {
 
-    font-family: 'Georgia';
+    font-family: 'Georgia', 'Gelasio', serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     line-height: 130%;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
     letter-spacing: 0.06em;
-    color: #545454;
 
 }
 
 .card-body h3 {
 
-    font-family: 'Georgia';
+    font-family: 'Georgia', 'Gelasio', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 2rem;
@@ -91,12 +112,10 @@ header {
     justify-content: space-between;
 
 
-
-
 }
 
 .logo {
-
+    width: 30rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -108,18 +127,13 @@ header {
     display: inline-block;
 }
 
-.burger {
-    display: none;
-}
-nav {
-    /*background-color: rgb(251, 1, 1); nav area test*/
 
+nav {
     height: 6rem;
     display: inline-block;
     /*  background-color: red; */
-    display: flex;
+    display: none;
     align-items: flex-start;
-
 
 }
 
@@ -162,42 +176,34 @@ nav a:active {
 
 .our-friends-background {
     background: #F6F6F6;
-    min-height: 173.3rem;
+    min-height: 164.9rem;
     padding-top: 12rem;
 
 }
 
-.our-friends-background .wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.our-friends-header {
+.our-friends-background .wrapper .our-friends-header {
     display: inline-block;
     text-align: center;
-    margin-top: 8rem;
+    padding-top: 1.6rem;
     margin-bottom: 0;
 }
 
 .slider {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    row-gap: 3rem;
-    column-gap: 4rem;
-    padding-top: 2.9rem;
+    padding-top: 4.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 3rem;
+    flex-direction: column;
+
 }
 
-.card:nth-child(8) .card-body {
+.card:nth-child(n+4) {
     display: none;
-    ;
+
 }
 
-.card:nth-child(7) .card-body {
-    display: none;
-    ;
-}
+
 
 .card-body {
     width: 27rem;
@@ -210,8 +216,12 @@ nav a:active {
     align-items: center;
     gap: 1.1rem;
 
+
 }
 
+.card {
+    padding-bottom: 3rem;
+}
 
 .card-body:hover {
     box-shadow: 1rem 1.2rem 2.1rem 0rem rgba(0, 0, 0, 0.33);
@@ -247,25 +257,23 @@ nav a:active {
 .slider-button-container {
     display: flex;
     flex-direction: column;
-    gap: 0.9rem;
+    gap: 1.2rem;
     align-items: center;
-
 }
 
 
 
 .pagination {
-    font-family: 'Georgia';
+    font-family: 'Georgia', 'Gelasio', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 2rem;
     line-height: 115%;
-
     display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    gap: 2rem;
+    gap: 1rem;
     color: #292929;
 
 }
@@ -308,72 +316,75 @@ nav a:active {
 
 }
 
+.our-friends-background .wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+
 /* CONTACTS */
 .main-footer-section {
-    min-height: 63.9rem;
+    min-height: 80.9rem;
 
     background: url(/assets/images/noise_transparent@2x.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
 }
 
 .footer-container {
     display: flex;
-    gap: 4.2rem;
-    padding-top: 1.2rem;
+    gap: 1.8rem;
+    padding-top: 0.5rem;
     flex-direction: column;
     align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+
+
 }
 
 .footer-text {
     display: flex;
-
+    flex-direction: column;
+    max-width: 100%;
 
 }
 
 .contacts {
     display: flex;
     flex-direction: column;
-    gap: 4rem;
-    width: 43%;
-    padding-left: 3.4rem;
+    gap: 1.4rem;
+    max-width: 84%;
+    margin: 0 auto;
+
 
 }
 
 .footer-header {
-    width: 95%;
-
-    margin-top: 1.7rem;
-    margin-bottom: 0;
-    margin-right: 0;
-    /* h3 */
-    text-align: left;
     font-family: 'Georgia', 'Gelasio', serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     line-height: 130%;
+    text-align: center;
     letter-spacing: 0.06em;
     color: #FFFFFF;
 
 }
 
 .footer-subheader {
-    width: 88%;
-    margin-top: 1.7rem;
-    margin-bottom: 0rem;
-
-    height: 9rem;
-    text-align: left;
     font-family: 'Georgia', 'Gelasio', serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     line-height: 130%;
+    text-align: center;
     letter-spacing: 0.06em;
     color: #FFFFFF;
+    padding-top: 1.5rem;
+    max-width: 90%;
+    padding-left: 1.5rem;
 }
 
 .contacts h4 {
-
     font-family: 'Georgia', 'Gelasio', serif;
     font-style: normal;
     font-weight: 400;
@@ -381,7 +392,6 @@ nav a:active {
     line-height: 115%;
     letter-spacing: 0.06em;
     color: #F1CDB3;
-    margin: 0;
 }
 
 .email {
@@ -394,6 +404,8 @@ nav a:active {
 
 
 .phone {
+    padding-top: 2.6rem;
+    padding-left: 0.6rem;
     display: flex;
     height: 3.2rem;
     align-items: center;
@@ -402,22 +414,15 @@ nav a:active {
 }
 
 .location {
-    width: 45%;
     display: flex;
     flex-direction: column;
-    gap: 4rem;
-    margin-left: 3.4rem;
+    gap: 2.1rem;
+    max-width: 100%;
+    margin: 0 auto;
+
 }
 
 .address-boston {
-    display: flex;
-    height: 3.4rem;
-    align-items: center;
-    gap: 2rem;
-
-}
-
-.address-london {
     display: flex;
     height: 3.2rem;
     align-items: center;
@@ -425,10 +430,22 @@ nav a:active {
 
 }
 
+.address-london {
+    display: flex;
+
+    height: 3.2rem;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 2.5rem;
+
+}
+
 .footer-puppy {
 
     padding-left: 0rem;
     padding-top: 2.3rem;
+    max-width: 86.5%;
+    height: auto;
 
 
 
@@ -455,7 +472,7 @@ nav a:active {
     font-family: 'Georgia', 'Gelasio', serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 2.0rem;
+    font-size: 2rem;
     line-height: 115%;
     letter-spacing: 0.06em;
     color: #F1CDB3;

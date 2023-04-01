@@ -1,6 +1,6 @@
 @media (min-width: 1280px) {
 
-    body,
+body,
     html {
         margin: 0;
         padding: 0;
@@ -457,8 +457,7 @@
 
 
 @media (min-width: 768px) and (max-width:1279px) {
-
-    body,
+body,
     html {
         margin: 0;
         padding: 0;
@@ -480,9 +479,7 @@
 
 
     }
-    .burger {
-        display: none;
-    }
+
 
     h1 {
         font-family: 'Georgia', 'Gelasio', serif;
@@ -934,7 +931,7 @@
 
 @media (max-width: 767px) {
 
-    body,
+body,
     html {
         margin: 0;
         padding: 0;

@@ -688,10 +688,7 @@
         }
     
         .email {
-    
-    
             display: flex;
-            width: 25.1rem;
             height: 3.2rem;
             align-items: center;
             gap: 2rem;
@@ -700,9 +697,7 @@
     
     
         .phone {
-    
             display: flex;
-            width: 25.1rem;
             height: 3.2rem;
             align-items: center;
             gap: 2rem;
@@ -718,7 +713,6 @@
     
         .address-boston {
             display: flex;
-            width: 40rem;
             height: 3.2rem;
             align-items: center;
             gap: 2rem;
@@ -727,7 +721,6 @@
     
         .address-london {
             display: flex;
-            width: 260;
             height: 3.2rem;
             align-items: center;
             gap: 2rem;
@@ -1034,9 +1027,6 @@
             margin-top: 3.5rem;
             padding-right: 12.8rem;
     
-    
-    
-    
         }
     
         .about-content {
@@ -1081,9 +1071,10 @@
         }
     
         .our-friends-header {
-    
-            margin-top: 8rem;
-            margin-bottom: 0.5rem;
+            padding-top: 8rem;
+            padding-bottom: 0.4rem;
+            margin-top: 0rem;
+            margin-bottom: 0rem;
             font-family: 'Georgia', 'Gelasio', serif;
             font-style: normal;
             font-weight: 400;
@@ -1369,7 +1360,7 @@
     
         .credit-card-icon-container {
             padding-top: 0.3rem;
-            padding-left: 0.3rem;
+            padding-left: 0;
     
         }
     
@@ -1440,7 +1431,7 @@
             flex-direction: column;
             gap: 4rem;
             width: 43%;
-            padding-left: 3.8rem;
+            padding-left: 3.4rem;
     
         }
     
@@ -1492,9 +1483,7 @@
     
         .email {
     
-    
             display: flex;
-            width: 25.1rem;
             height: 3.2rem;
             align-items: center;
             gap: 2rem;
@@ -1503,9 +1492,7 @@
     
     
         .phone {
-    
             display: flex;
-            width: 25.1rem;
             height: 3.2rem;
             align-items: center;
             gap: 2rem;
@@ -1518,12 +1505,11 @@
             flex-direction: column;
             gap: 4rem;
     
-            margin-left: 3rem;
+            margin-left: 3.4rem;
         }
     
         .address-boston {
             display: flex;
-            width: 40rem;
             height: 3.2rem;
             align-items: center;
             gap: 2rem;
@@ -1532,7 +1518,6 @@
     
         .address-london {
             display: flex;
-            width: 260;
             height: 3.2rem;
             align-items: center;
             gap: 2rem;
@@ -2026,13 +2011,8 @@
         }
     
         .card-body img {
-    
             width: 100%;
-            /* Sets the image width to 100% of the container */
             height: auto;
-            /* Maintains the aspect ratio while resizing */
-    
-            /* Ensures the image doesn't go beyond the container */
         }
     
         .card-body:hover {
@@ -2346,10 +2326,7 @@
         }
     
         .email {
-    
-    
             display: flex;
-            width: 25.1rem;
             height: 3.2rem;
             align-items: center;
             gap: 2rem;
@@ -2361,7 +2338,6 @@
             padding-top: 2.6rem;
             padding-left: 0.6rem;
             display: flex;
-            width: 25.1rem;
             height: 3.2rem;
             align-items: center;
             gap: 2rem;
@@ -2379,7 +2355,6 @@
     
         .address-boston {
             display: flex;
-            width: 40rem;
             height: 3.2rem;
             align-items: center;
             gap: 2rem;
@@ -2388,7 +2363,6 @@
     
         .address-london {
             display: flex;
-            width: 260;
             height: 3.2rem;
             align-items: center;
             gap: 2rem;
