@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/pages/main/normalize.css" />
-    <link rel="stylesheet" href="/pages/main/style.css" />
-
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,6 +19,59 @@
 
   <body>
     <div class="layout">
+      <div class="dimmed-area invisible"></div>
+      <div class="modal-window">
+        <button class="modal-close-button">
+          <img src="../../assets/icons/modal-cross.svg" alt="" />
+        </button>
+        <div class="popup-content">
+          <div class="popup-image">
+            <img
+              src="../../assets/images/pets-jennifer.png"
+              alt="Pet's photo"
+            />
+          </div>
+          <div class="popup-text">
+            <h3>Jennifer</h3>
+            <h4>Dog - Labrador</h4>
+            <h5>
+              Jennifer is a sweet 2 months old Labrador that is patiently
+              waiting to find a new forever home. This girl really enjoys being
+              able to go outside to run and play, but won't hesitate to play up
+              a storm in the house if she has all of her favorite toys.
+            </h5>
+            <div class="pet-deseases">
+              <ul class="popup-list-container">
+                <li class="popup-list">
+                  <h5>
+                    <b>Age:</b>
+                    2 months
+                  </h5>
+                </li>
+                <li class="popup-list">
+                  <h5>
+                    <b>Inoculations:</b>
+                    none
+                  </h5>
+                </li>
+                 <li class="popup-list">
+                  <h5>
+                    <b>Diseases:</b>
+                    none
+                  </h5>
+                </li>
+                <li class="popup-list">
+                  <h5>
+                    <b>Parasites:</b>
+                    none
+                  </h5>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="start-screen">
         <div class="wrapper">
           <header>
@@ -29,7 +82,7 @@
             </div>
             <nav>
               <a href="#about" class="active">About the shelter</a>
-              <a href="/pages/pets/index.html">Our pets</a>
+              <a href="../pets/index.html">Our pets</a>
               <a href="#help">Help the shelter</a>
               <a href="#contacts">Contacts</a>
             </nav>
@@ -38,6 +91,21 @@
               <div class="line"></div>
               <div class="line"></div>
             </nav>
+            <div class="mobile-menu mobile-menu-hidden">
+              <div class="logo">
+                <a href="#"><h1 class="logo-header">Cozy House</h1></a>
+
+                <h2 class="logo-subheader">Shelter for pets in Boston</h2>
+              </div>
+              <div class="mobile-list-container">
+                <a class="mobile-list" href="#about" class="active"
+                  >About the shelter</a
+                >
+                <a class="mobile-list" href="../pets/index.html">Our pets</a>
+                <a class="mobile-list" href="#help">Help the shelter</a>
+                <a class="mobile-list" href="#contacts">Contacts</a>
+              </div>
+            </div>
           </header>
 
           <main>
@@ -46,14 +114,16 @@
                 <h3 class="not-only-header">Not only people need a house</h3>
                 <p class="start-screen-content">
                   We offer to give a chance to a little and nice puppy with an
-                  extremely <br>wide and open heart. He or she will love you
-                  more than anybody else <br>in the world, you will see!
+                  extremely <br />wide and open heart. He or she will love you
+                  more than anybody else <br />in the world, you will see!
                 </p>
 
-                <a href="#" class="start-screen-button">Make a friend</a>
+                <a href="#our-friends" class="start-screen-button"
+                  >Make a friend</a
+                >
               </div>
               <img
-                src="/assets/images/start-screen-puppy.png"
+                src="../../assets/images/start-screen-puppy.png"
                 class="main-puppy"
                 alt="Cute puppy"
               />
@@ -65,7 +135,7 @@
         <div class="wrapper">
           <section id="about">
             <img
-              src="/assets/images/about-pets.png"
+              src="../../assets/images/about-pets.png"
               class="about-pets wrapper"
               alt="A dog and a cat"
               width="300"
@@ -101,7 +171,7 @@
               <div class="card" id="card-1">
                 <div class="card-body">
                   <img
-                    src="/assets/images/pets-katrine.png"
+                    src="../../assets/images/pets-katrine.png"
                     alt="Katrine the Cat"
                   />
                   <h3>Katrine</h3>
@@ -111,7 +181,7 @@
               <div class="card" id="card-2">
                 <div class="card-body">
                   <img
-                    src="/assets/images/pets-jennifer.png"
+                    src="../../assets/images/pets-jennifer.png"
                     alt="Cute Puppy Jennifer"
                   />
                   <h3>Jennifer</h3>
@@ -121,7 +191,7 @@
               <div class="card" id="card-3">
                 <div class="card-body">
                   <img
-                    src="/assets/images/pets-woody.png"
+                    src="../../assets/images/pets-woody.png"
                     alt="Funny dog Woody"
                   />
                   <h3>Woody</h3>
@@ -131,7 +201,9 @@
             </div>
             <button class="right-arrow-button"></button>
           </div>
-          <a href="" class="know-rest-button">Get to know the rest</a>
+          <a href="../../pages/pets/index.html" class="know-rest-button"
+            >Get to know the rest</a
+          >
         </section>
       </div>
       <div class="help-shelter">
@@ -140,48 +212,51 @@
 
           <div class="icons-container">
             <div class="icon">
-              <img src="/assets/icons/pet-food.svg" alt="Pet food" />
+              <img src="../../assets/icons/pet-food.svg" alt="Pet food" />
               <h4>Pet food</h4>
             </div>
             <div class="icon">
               <img
-                src="/assets/icons/transportation.svg"
+                src="../../assets/icons/transportation.svg"
                 alt="Transportation"
               />
               <h4>Transportation</h4>
             </div>
             <div class="icon">
-              <img src="/assets/icons/toys.svg" alt="Toys" />
+              <img src="../../assets/icons/toys.svg" alt="Toys" />
               <h4>Toys</h4>
             </div>
             <div class="icon">
               <img
-                src="/assets/icons/bowls-and-cups.svg"
+                src="../../assets/icons/bowls-and-cups.svg"
                 alt="Bowls and cups"
               />
               <h4>Bowls and cups</h4>
             </div>
             <div class="icon">
-              <img src="/assets/icons/shampoos.svg" alt="Shampoos" />
+              <img src="../../assets/icons/shampoos.svg" alt="Shampoos" />
               <h4>Shampoos</h4>
             </div>
             <div class="icon">
-              <img src="/assets/icons/vitamins.svg" alt="Vitamins" />
+              <img src="../../assets/icons/vitamins.svg" alt="Vitamins" />
               <h4>Vitamins</h4>
             </div>
             <div class="icon">
-              <img src="/assets/icons/medicines.svg" alt="Medicines" />
+              <img src="../../assets/icons/medicines.svg" alt="Medicines" />
               <h4>Medicines</h4>
             </div>
             <div class="icon">
               <img
-                src="/assets/icons/collars-or-leashes.svg"
+                src="../../assets/icons/collars-or-leashes.svg"
                 alt="Collars / Leashes"
               />
               <h4>Collars / leashes</h4>
             </div>
             <div class="icon">
-              <img src="/assets/icons/sleeping-area.svg" alt="Sleeping areas" />
+              <img
+                src="../../assets/icons/sleeping-area.svg"
+                alt="Sleeping areas"
+              />
               <h4>Sleeping areas</h4>
             </div>
           </div>
@@ -192,7 +267,7 @@
           <div class="donation-container">
             <div class="donation-dog">
               <img
-                src="/assets/images/donation-dog.png"
+                src="../../assets/images/donation-dog.png"
                 alt="Donation dog"
                 class="donation-dog-image"
               />
@@ -204,7 +279,10 @@
               </h5>
               <a href="#" class="credit-card">
                 <div class="credit-card-icon-container">
-                  <img src="/assets/icons/credit-card.svg" alt="Credit card" />
+                  <img
+                    src="../../assets/icons/credit-card.svg"
+                    alt="Credit card"
+                  />
                 </div>
                 <h4 class="card-number">8380 2880 8028 8791 7435</h4>
               </a>
@@ -226,13 +304,13 @@
               <div class="contacts">
                 <h3 class="footer-header">For questions and suggestions</h3>
                 <div class="email">
-                  <img src="/assets/icons/mail.svg" alt="E-mail icon" />
+                  <img src="../../assets/icons/mail.svg" alt="E-mail icon" />
                   <a href="mailto:email@shelter.com" target="_blank"
                     ><h4>email@shelter.com</h4></a
                   >
                 </div>
                 <div class="phone">
-                  <img src="/assets/icons/phone.svg" alt="Phone icon" />
+                  <img src="../../assets/icons/phone.svg" alt="Phone icon" />
                   <a href="tel:+136745677554" target="_blank"
                     ><h4>+13 674 567 75 54</h4></a
                   >
@@ -241,7 +319,7 @@
               <div class="location">
                 <h3 class="footer-subheader">We are waiting for your visit</h3>
                 <div class="address-boston">
-                  <img src="/assets/icons/pin.svg" alt="Pin icon" />
+                  <img src="../../assets/icons/pin.svg" alt="Pin icon" />
                   <a
                     href="https://goo.gl/maps/j4JzUkXVWJD4cvJM7"
                     target="_blank"
@@ -251,7 +329,7 @@
                   >
                 </div>
                 <div class="address-london">
-                  <img src="/assets/icons/pin.svg" alt="Pin icon" />
+                  <img src="../../assets/icons/pin.svg" alt="Pin icon" />
                   <a
                     href="https://goo.gl/maps/XxNSaGfUtX1VVo8dA"
                     target="_blank"
@@ -261,7 +339,7 @@
               </div>
             </div>
             <img
-              src="/assets/images/footer-puppy.png"
+              src="../../assets/images/footer-puppy.png"
               alt="Happy dog"
               class="footer-puppy"
               width="300"
