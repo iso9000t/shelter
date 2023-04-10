@@ -14,32 +14,42 @@ let isTransitioning = false; //burger menu transition flag
 
 
 function menuClick() {
-    if ((event.target.closest('.burger') && isTransitioning === false) || event.target.classList.contains('mobile-list') || event.target.closest('.dimmed-area')) {
+    if ((event.target.closest('.burger') && isTransitioning === false) || event.target.classList.contains('mobile-list')) {
 
         isTransitioning = true;
-      
-        if (dimmedArea.classList.contains('invisible')) {
-         setTimeout(() => { isTransitioning = false; }, 510);
-            dimmedArea.classList.remove('invisible');
 
+        if (dimmedArea.classList.contains('invisible')) {
+            setTimeout(() => { isTransitioning = false; }, 510);
+            dimmedArea.classList.remove('invisible');
             setTimeout(() => {
                 dimmedArea.classList.add('dimmed-area-visible');
             }, 50);
-          
-          
         } else {
             dimmedArea.classList.remove('dimmed-area-visible');
             setTimeout(() => {
                 dimmedArea.classList.add('invisible');
             }, 500);
             setTimeout(() => { isTransitioning = false; }, 500);
-           
-        } 
+        }
+
         mobileMenu.classList.toggle('mobile-menu-hidden');
         hamburger.classList.toggle('burger-vertical');
         body.classList.toggle('no-scroll');
         console.log(isTransitioning);
-       
+
+    } else if (!mobileMenu.classList.contains('mobile-menu-hidden') && event.target.closest('.dimmed-area')) {
+        isTransitioning = true;
+        dimmedArea.classList.remove('dimmed-area-visible');
+        setTimeout(() => {
+            dimmedArea.classList.add('invisible');
+        }, 500);
+        setTimeout(() => { isTransitioning = false; }, 500);
+
+        mobileMenu.classList.toggle('mobile-menu-hidden');
+        hamburger.classList.toggle('burger-vertical');
+        body.classList.toggle('no-scroll');
+        console.log(isTransitioning);
     }
 }
+
     /*  || (event.target.classList.contains('mobile-list')  (event.target.closest('.dimmed-area')) */
