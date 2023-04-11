@@ -166,7 +166,7 @@
     }
 
     .start-screen {
-        background: url(/assets/images/noise_transparent.png),
+        background: url(../../assets/images/noise_transparent.png),
             radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%),
             #211F20;
 
@@ -479,7 +479,7 @@
         margin-top: 1.4rem;
         width: 5.2rem;
         height: 5.2rem;
-        background-image: url(/assets/icons/button-arrow-left.svg);
+        background-image: url(../../assets/icons/button-arrow-left.svg);
         background-repeat: no-repeat;
         background-position: center;
         border: none;
@@ -490,7 +490,7 @@
     }
 
     .left-arrow-button:hover {
-        background-image: url(/assets/icons/button-arrow-hover.svg);
+        background-image: url(../../assets/icons/button-arrow-hover.svg);
         cursor: pointer;
     }
 
@@ -499,7 +499,7 @@
         padding-right: 1rem;
         width: 5.2rem;
         height: 5.2rem;
-        background-image: url(/assets/icons/button-arrow-left.svg);
+        background-image: url(../../assets/icons/button-arrow-left.svg);
         background-repeat: no-repeat;
         background-position: center;
         border: none;
@@ -511,7 +511,7 @@
     }
 
     .right-arrow-button:hover {
-        background-image: url(/assets/icons/button-arrow-hover.svg);
+        background-image: url(../../assets/icons/button-arrow-hover.svg);
         cursor: pointer;
     }
 
@@ -1425,7 +1425,7 @@
         margin-top: 1.4rem;
         width: 5.2rem;
         height: 5.2rem;
-        background-image: url(/assets/icons/button-arrow-left.svg);
+        background-image: url(../../assets/icons/button-arrow-left.svg);
         background-repeat: no-repeat;
         background-position: center;
         border: none;
@@ -1435,7 +1435,7 @@
     }
 
     .left-arrow-button:hover {
-        background-image: url(/assets/icons/button-arrow-hover.svg);
+        background-image: url(../../assets/icons/button-arrow-hover.svg);
         cursor: pointer;
 
     }
@@ -1445,7 +1445,7 @@
         margin-top: 1.4rem;
         width: 5.2rem;
         height: 5.2rem;
-        background-image: url(/assets/icons/button-arrow-left.svg);
+        background-image: url(../../assets/icons/button-arrow-left.svg);
         background-repeat: no-repeat;
         background-position: center;
         border: none;
@@ -1456,7 +1456,7 @@
     }
 
     .right-arrow-button:hover {
-        background-image: url(/assets/icons/button-arrow-hover.svg);
+        background-image: url(../../assets/icons/button-arrow-hover.svg);
         cursor: pointer;
     }
 
@@ -2488,7 +2488,7 @@
         margin-top: 1.4rem;
         width: 6rem;
         height: 6rem;
-        background-image: url(/assets/icons/button-arrow-left.svg);
+        background-image: url(../../assets/icons/button-arrow-left.svg);
         background-repeat: no-repeat;
         background-position: center;
         border: none;
@@ -2500,7 +2500,7 @@
     }
 
     .left-arrow-button:hover {
-        background-image: url(/assets/icons/button-arrow-hover.svg);
+        background-image: url(../../assets/icons/button-arrow-hover.svg);
         cursor: pointer;
 
 
@@ -2511,7 +2511,7 @@
         margin-top: 1.4rem;
         width: 6rem;
         height: 6rem;
-        background-image: url(/assets/icons/button-arrow-left.svg);
+        background-image: url(../../assets/icons/button-arrow-left.svg);
         background-repeat: no-repeat;
         background-position: center;
         border: none;
@@ -2524,7 +2524,7 @@
     }
 
     .right-arrow-button:hover {
-        background-image: url(/assets/icons/button-arrow-hover.svg);
+        background-image: url(../../assets/icons/button-arrow-hover.svg);
         cursor: pointer;
     }
 
