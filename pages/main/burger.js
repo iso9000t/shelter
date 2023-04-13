@@ -52,4 +52,4 @@ function menuClick() {
     }
 }
 
-    /*  || (event.target.classList.contains('mobile-list')  (event.target.closest('.dimmed-area')) */
+   

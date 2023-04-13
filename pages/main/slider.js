@@ -33,7 +33,7 @@ fetch("../../assets/pets.json")
 
 
 
-/* Get random numbers */
+                                /* Get random numbers */
 let lastArray = null;
 
 function generateArray() {
@@ -66,7 +66,7 @@ function getObjectsByIds(ids) {
 }
 
 document.addEventListener('click', (event) => {
-  if (event.target.closest('.right-arrow-button')) {
+  if (event.target.closest('.left-arrow-button')) {
   
   [...cards].forEach(card => {
     card.classList.add('slide-right');
@@ -85,7 +85,7 @@ document.addEventListener('click', (event) => {
     
   }
 
-  if (event.target.closest('.left-arrow-button')) {
+  if (event.target.closest('.right-arrow-button')) {
   
   [...cards].forEach(card => {
     card.classList.add('slide-left');
@@ -203,6 +203,7 @@ function createCards () {
   cardContainer.innerHTML = '';
 
   // Create cards dynamically based on currentCardsArray
+  const fragment = document.createDocumentFragment();
   currentCardsArray.forEach((cardData) => {
     const card = document.createElement("div");
     card.classList.add("card");
@@ -215,9 +216,11 @@ function createCards () {
         <button class="card-button">Learn more</button>
       </div>
     `;
-
-    cardContainer.append(card);
+    fragment.appendChild(card);
+    
+   /*  cardContainer.append(card); */
   });
+  cardContainer.append(fragment);
 }
  
 
@@ -239,4 +242,5 @@ function openDimmedArea() {
             }, 50);
           
 }
+
 

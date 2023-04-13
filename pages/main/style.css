@@ -587,6 +587,12 @@
         cursor: pointer;
     }
 
+    .card-body:hover .card-button {
+        background: #FDDCC4;
+        border: 0.2rem solid #FDDCC4;
+
+    }
+
     .card-button {
         margin-top: 0rem;
         background-color: transparent;
@@ -607,8 +613,9 @@
         cursor: pointer;
         background: #FDDCC4;
         border: 0.2rem solid #FDDCC4;
-
+    
     }
+
 
 
     .know-rest-button {
@@ -753,6 +760,11 @@
         border: none;
 
     }
+    .credit-card {
+        cursor: pointer;
+
+    }
+
 
     .credit-card-icon-container {
         padding-top: 0.3rem;
@@ -978,26 +990,27 @@
         display: none;
     }
 
-         .invisible {
-             display: none;
-         }
+    .invisible {
+        display: none;
+    }
     
-         .dimmed-area {
-             position: fixed;
-             width: 100vw;
-             height: 100vh;
-             background: rgba(41, 41, 41, 0.6);
-             transition: opacity 0.5s ease-in-out;
-             opacity: 0;
-             z-index: 1;
+    .dimmed-area {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(41, 41, 41, 0.6);
+        transition: opacity 0.5s ease-in-out;
+        opacity: 0;
+        z-index: 1;
     
-         }
+    }
     
-         .dimmed-area-visible {
+    .dimmed-area-visible {
              display: block;
              opacity: 1;
     
-         }
+    }
+
     .modal-window {
         position: fixed;
         width: 68.2rem;
@@ -1124,7 +1137,6 @@
     }
 
 
-
     h1 {
 
         font-family: 'Georgia', 'Gelasio', serif;
@@ -1179,7 +1191,6 @@
     }
 
 
-
     .logo-subheader {
         margin-left: 0.4rem;
         margin-top: 0.9rem;
@@ -1206,8 +1217,6 @@
         display: flex;
         align-items: flex-start;
         gap: 3.6rem;
-
-
     }
 
     nav a {
@@ -1221,7 +1230,6 @@
         text-decoration: none;
         transition: color 0.2s ease;
 
-
     }
 
     nav a:hover {
@@ -1229,26 +1237,22 @@
 
     }
 
-
     nav a:active {
         transform: scale(.98);
     }
 
     nav .active {
         cursor: pointer;
-
         color: rgb(250, 250, 250);
         border-bottom: 0.3rem solid rgb(241, 205, 179);
     }
 
     .not-only {
-
         display: flex;
         gap: 3.2rem;
         flex-direction: column;
         align-items: center;
         padding-left: 1rem;
-
     }
 
     .not-only-header {
@@ -1266,7 +1270,6 @@
 
     /* START SCREEN */
     .burger {
-
         display: none;
     }
 
@@ -1274,8 +1277,6 @@
         display: flex;
         flex-direction: column;
         gap: 0;
-
-
     }
 
 
@@ -1288,9 +1289,7 @@
         font-size: 1.5rem;
         line-height: 160%;
         padding-top: 4.1rem;
-
         width: 47rem;
-
 
     }
 
@@ -1534,6 +1533,11 @@
         cursor: pointer;
     }
 
+   .card-body:hover .card-button {
+       background: #FDDCC4;
+       border: 0.2rem solid #FDDCC4;
+
+   }
     .card-button {
         margin-top: 0rem;
         background-color: transparent;
@@ -1702,13 +1706,15 @@
         background: #F1CDB3;
         border-radius: 0.9rem;
         border: none;
+    }
 
+    .credit-card {
+        cursor: pointer;
     }
 
     .credit-card-icon-container {
         padding-top: 0.3rem;
         padding-left: 0;
-
     }
 
     .card-number {
@@ -2110,7 +2116,7 @@
         gap: 0.8rem;
         margin-right: 4.3rem;
         margin-top: 2rem;
-        z-index: 1;
+        z-index: 3;
         max-height: 2.3rem;
         transition: all 0.25s ease-in-out;
     }
@@ -2144,6 +2150,7 @@
         gap: 15.8rem;
         min-height: 0;
         transition: right .3s ease-in-out;
+        z-index: 2;
     }
 
 
@@ -2157,11 +2164,6 @@
         display: none;
     }
 
-    .mobile-menu .logo {
-        padding-top: 3rem;
-        padding-left: 1rem;
-        flex-shrink: 1;
-    }
 
     .mobile-list-container {
         display: flex;
@@ -2236,7 +2238,6 @@
     }
 
     .logo {
-
         width: 25rem;
         display: flex;
         flex-direction: column;
@@ -2251,6 +2252,30 @@
         margin-top: 0.9rem;
         display: inline-block;
 
+    }
+    .burger-logo {
+        width: 25rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.1rem;
+        padding-top: 4rem;
+        padding-left: 1rem;
+    }
+    
+    .burger-header {
+        font-family: 'Georgia', 'Gelasio', serif;
+        color: rgba(241, 205, 179, 1);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 3.2rem;
+        margin: 0;
+        letter-spacing: 0.06em;
+    }
+    .burger-subheader {
+        margin-left: 0.4rem;
+        margin-top: 0.9rem;
+        display: inline-block;
     }
 
     header {
@@ -2617,6 +2642,12 @@
         cursor: pointer;
     }
 
+    .card-body:hover .card-button {
+        background: #FDDCC4;
+        border: 0.2rem solid #FDDCC4;
+    
+    }
+
     .card-button {
         margin-top: 0rem;
         background-color: transparent;
@@ -2708,6 +2739,7 @@
 
     }
 
+    
 
     .icons-container {
         display: grid;
@@ -2794,8 +2826,10 @@
         background: #F1CDB3;
         border-radius: 0.9rem;
         border: none;
+    }
 
-
+    .credit-card {
+        cursor: pointer;
     }
 
     .credit-card-icon-container {
