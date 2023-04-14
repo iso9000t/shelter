@@ -38,7 +38,7 @@
             display: none;
         }
         .dimmed-area {
-            z-index: 1;
+            z-index: 2;
             position: fixed;
             width: 100vw;
             height: 100vh;
@@ -229,6 +229,7 @@
         min-height: 10.2rem;
         position: fixed;
         width: 100%;
+        z-index: 1;
 
     }
 
@@ -319,13 +320,19 @@
     }
 
     .slider {
-
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         padding-top: 2.3rem;
         column-gap: 3rem;
         row-gap: 3rem;
+        opacity: 1;
+        
+    }
+    .fader {
+      
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
     }
 
     .card-body {
@@ -636,7 +643,7 @@
 }
 
 .dimmed-area {
-    z-index: 1;
+    z-index: 2;
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -841,6 +848,8 @@
         min-height: 10.2rem;
         position: fixed;
         width: 100%;
+        z-index: 1;
+    
 
     }
 
@@ -944,8 +953,13 @@
         row-gap: 3rem;
         column-gap: 4rem;
         padding-top: 2.9rem;
+   
     }
+  .fader {
 
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+  }
     .card:nth-child(8) .card-body {
         display: none;
         ;
@@ -1253,7 +1267,7 @@
    }
 
    .dimmed-area {
-        z-index: 1;
+        z-index: 2;
        position: fixed;
        width: 100vw;
        height: 100vh;
@@ -1432,7 +1446,7 @@
     gap: 0.8rem;
     margin-right: 4.3rem;
     margin-top: 2rem;
-    z-index: 2;
+    z-index: 3;
     max-height: 2.3rem;
     transition: transform 0.25s ease-in-out;
 }
@@ -1488,7 +1502,7 @@
     gap: 15.8rem;
     min-height: 0;
     transition: right .3s ease-in-out;
-    z-index: 1;
+    z-index: 2;
    
 }
 
@@ -1694,6 +1708,11 @@
 
     }
 
+    .fader {
+
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+  }
     .card:nth-child(n+4) {
         display: none;
 

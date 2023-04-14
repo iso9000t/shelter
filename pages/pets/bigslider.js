@@ -28,6 +28,7 @@ const burger = document.getElementsByClassName('burger')[0];
 
 
 
+
 //Add an event listener to the cards using the cardsContainer and delegation
 
 cardsContainer.addEventListener('click', (e) => { 
@@ -203,9 +204,14 @@ function addPageButtonEventListeners() {
     } else {
       return; // If the clicked element is not one of the buttons, exit the function
     }
-
+    cardsContainer.classList.add('fader');
+    setTimeout(() => {
+      cardsContainer.classList.remove('fader');
+    }, 301);
     updateButtons();
-    useRandomPetsArray();
+    setTimeout(() => {
+      useRandomPetsArray();
+    }, 301);
     updatePageNumber();
   });
 }
@@ -250,16 +256,36 @@ function randomArray() {
   return arr;
 }
 
+
 // Generate the big random array with 48 elements
 function generateBigRandomArray() {
+  const screenWidth = window.innerWidth;
+  let itemsPerPage;
+  let totalPages;
 
-  for (let i = 0; i < 6; i++) {
-    const tempArray = randomArray();
+  if (screenWidth >= 1280) {
+    itemsPerPage = 8;
+    totalPages = 6;
+  } else if (screenWidth >= 768 && screenWidth < 1280) {
+    itemsPerPage = 6;
+    totalPages = 8;
+  } else {
+    itemsPerPage = 3;
+    totalPages = 16;
+  }
+
+  const max = originalPetsArray.length;
+  let bigRandomArray = [];
+
+  for (let cycle = 0; cycle < totalPages; cycle++) {
+    const tempArray = randomArray(max).slice(0, itemsPerPage);
     bigRandomArray = [...bigRandomArray, ...tempArray];
   }
 
   return bigRandomArray;
 }
+
+
 
 // Create the randomPetsArray with 48 pet objects
 function randomPetArray() {
@@ -269,6 +295,7 @@ function randomPetArray() {
     randomPetsArray.push(originalPetsArray[bigRandomArray[i] - 1]);
   }
 }
+
 
 
 //Render the visible card set
@@ -308,16 +335,24 @@ function renderCard(from, to) {
 function updateItemsPerPageAndTotalPages() {
   const screenWidth = window.innerWidth;
   let previousTotalPages = totalPages;
+  let newItemsPerPage;
+  let newTotalPages;
 
   if (screenWidth >= 1280) {
-    itemsPerPage = 8;
-    totalPages = 6;
+    newItemsPerPage = 8;
+    newTotalPages = 6;
   } else if (screenWidth >= 768 && screenWidth < 1280) {
-    itemsPerPage = 6;
-    totalPages = 8;
+    newItemsPerPage = 6;
+    newTotalPages = 8;
   } else {
-    itemsPerPage = 3;
-    totalPages = 16;
+    newItemsPerPage = 3;
+    newTotalPages = 16;
+  }
+
+  if (newItemsPerPage !== itemsPerPage || newTotalPages !== totalPages) {
+    itemsPerPage = newItemsPerPage;
+    totalPages = newTotalPages;
+    generateRandomPetsArray();
   }
 
   // Update the current page number if it's greater than the new total pages
@@ -331,6 +366,20 @@ function updateItemsPerPageAndTotalPages() {
   }
 }
 
+
+// Generate a new random pets array based on the updated itemsPerPage and totalPages
+function generateRandomPetsArray() {
+  const bigRandomArray = generateBigRandomArray();
+
+  randomPetsArray = [];
+  for (let i = 0; i < itemsPerPage * totalPages; i++) {
+    randomPetsArray.push(originalPetsArray[bigRandomArray[i] - 1]);
+  }
+
+  useRandomPetsArray(); // Update the pets displayed based on the new itemsPerPage
+}
+
+
 /* Add a resize event listener to update 
 itemsPerPage and totalPages when the window is resized */
 window.addEventListener("resize", () => {
@@ -342,6 +391,7 @@ window.addEventListener("resize", () => {
 
 // Use the randomPetsArray
 function useRandomPetsArray() {
+
   const startIndex = (currentPageNumber - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
 
