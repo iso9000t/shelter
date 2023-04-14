@@ -85,6 +85,10 @@
 
     }
 
+    .dimmed-area:hover~.modal-window .modal-close-button {
+        background-color: #FDDCC4;
+    }
+
     .popup-content {
         position: absolute;
         width: 90rem;
@@ -1037,7 +1041,9 @@
         background-color: #FDDCC4;
 
     }
-
+    .dimmed-area:hover~.modal-window .modal-close-button {
+        background-color: #FDDCC4;
+    }
     .popup-content {
         position: absolute;
         width: 63rem;
@@ -1987,7 +1993,9 @@
         background-color: #FDDCC4;
 
     }
-
+    .dimmed-area:hover~.modal-window .modal-close-button {
+        background-color: #FDDCC4;
+    }
     .popup-content {
         position: absolute;
         width: 24rem;
