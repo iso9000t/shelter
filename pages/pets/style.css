@@ -327,12 +327,12 @@
         column-gap: 3rem;
         row-gap: 3rem;
         opacity: 1;
-        
+        transition: opacity 0.3s ease-in-out;
     }
     .fader {
       
         opacity: 0;
-        transition: opacity 0.3s ease-in-out;
+        
     }
 
     .card-body {
@@ -716,7 +716,7 @@
         .popup-image img {
             width: 35rem;
             height: 35rem;
-            border-radius: 0.9rem;
+            border-radius: 0.9rem 0px 0px 0.9rem;
         }
     
         .popup-text h3 {
@@ -953,12 +953,11 @@
         row-gap: 3rem;
         column-gap: 4rem;
         padding-top: 2.9rem;
+        transition: opacity 0.3s ease-in-out;
    
     }
   .fader {
-
       opacity: 0;
-      transition: opacity 0.3s ease-in-out;
   }
     .card:nth-child(8) .card-body {
         display: none;
@@ -1347,7 +1346,7 @@
     .popup-image img {
         max-width: 35rem;
         height: 35rem;
-        border-radius: 0.9rem;
+        border-radius: 0.9rem 0px 0px 0.9rem;
         display: none;
     }
 
@@ -1705,13 +1704,14 @@
         justify-content: space-between;
         column-gap: 3rem;
         flex-direction: column;
+        transition: opacity 0.3s ease-in-out;
 
     }
 
     .fader {
 
       opacity: 0;
-      transition: opacity 0.3s ease-in-out;
+      
   }
     .card:nth-child(n+4) {
         display: none;
