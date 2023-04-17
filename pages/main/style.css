@@ -1059,7 +1059,7 @@
     .popup-image img {
         width: 35rem;
         height: 35rem;
-        border-radius: 0.9rem;
+        border-radius: 0.9rem 0px 0px 0.9rem;
     }
 
     .popup-text h3 {
@@ -2011,7 +2011,7 @@
     .popup-image img {
         max-width: 35rem;
         height: 35rem;
-        border-radius: 0.9rem;
+        border-radius: 0.9rem 0px 0px 0.9rem;
         display: none;
     }
 
