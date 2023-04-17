@@ -56,25 +56,26 @@
     }
 
     .modal-window {
-        position: fixed;
-        width: 95.2rem;
-        height: 55.2rem;
+    position: fixed;
+        width: 90rem;
+        height: 50rem;
         top: 50%;
         left: 50%;
-     /*    transform: translate(-50%, -50%); */
-        transform: translate(-47.2%, -50%);
+        /* transform: translate(-50%, -50%); */
+        transform: translate(-50%, -50%);
         z-index: 4;
        
     }
 
     .modal-close-button {
         position: absolute;
+        position: absolute;
         height: 5.2rem;
         width: 5.2rem;
         border: 0.2rem solid #F1CDB3;
         border-radius: 10rem;
-        top: 0rem;
-        right: 1rem;
+        top: -5.200000000000001rem;
+        right: -4.3000000000000025rem;
         background-color: transparent;
         transition: background-color .15s ease-in-out;
     }
@@ -1012,12 +1013,14 @@
 
     .modal-window {
         position: fixed;
-        width: 68.2rem;
-        height: 40.2rem;
-        top: 42.5%;
-        left: 52.1%;
+        width: 63rem;
+        height: 35rem;
+        top: 50%;
+        left: 50%;
         transform: translate(-50%, -50%);
         z-index: 4;
+
+
     }
 
     .modal-close-button {
@@ -1026,11 +1029,11 @@
         width: 5.2rem;
         border: 0.2rem solid #F1CDB3;
         border-radius: 10rem;
-        top: 0rem;
-        right: 1rem;
+        top: -5.1rem;
+        right: -4.2rem;
         background-color: transparent;
         transition: background-color .15s ease-in-out;
-    }
+}
 
     .modal-close-button:hover {
         background-color: #FDDCC4;
@@ -1958,28 +1961,29 @@
 
     }
 
-    .modal-window {
-        position: fixed;
-        width: 27rem;
-        min-height: 39.3rem;
-        top: 42.5%;
-        left: 54.5%;
-        transform: translate(-50%, -50%);
-        z-index: 4;
-       
-    }
-
-    .modal-close-button {
-        position: absolute;
-        height: 5.2rem;
-        width: 5.2rem;
-        border: 0.2rem solid #F1CDB3;
-        border-radius: 10rem;
-        top: 0rem;
-        right: 0rem;
-        background-color: transparent;
-        transition: background-color .15s ease-in-out;
-    }
+        .modal-window {
+            position: fixed;
+            width: 24rem;
+            min-height: 39.3rem;
+            top: 44.8%;
+            left: 58%;
+            transform: translate(-50%, -50%);
+            z-index: 4;
+    
+    
+        }
+    
+        .modal-close-button {
+            position: absolute;
+            height: 5.2rem;
+            width: 5.2rem;
+            border: 0.2rem solid #F1CDB3;
+            border-radius: 10rem;
+            top: 0rem;
+            right: 0rem;
+            background-color: transparent;
+            transition: background-color .15s ease-in-out;
+        }
 
     .modal-close-button:hover {
         background-color: #FDDCC4;
@@ -2038,7 +2042,7 @@
         font-weight: 400;
         line-height: 2.3rem;
         letter-spacing: 0.06em;
-        text-align: left;
+        text-align: center;
         margin-top: 0rem;
         margin-bottom: 2.1rem;
     }
