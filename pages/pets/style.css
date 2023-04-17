@@ -955,18 +955,11 @@
         transition: opacity 0.3s ease-in-out;
    
     }
+    
   .fader {
       opacity: 0;
   }
-    .card:nth-child(8) .card-body {
-        display: none;
-        ;
-    }
-
-    .card:nth-child(7) .card-body {
-        display: none;
-        ;
-    }
+ 
 
     .card-body {
         width: 27rem;
@@ -1709,11 +1702,6 @@
       opacity: 0;
       
   }
-    .card:nth-child(n+4) {
-        display: none;
-
-    }
-
 
 
     .card-body {
