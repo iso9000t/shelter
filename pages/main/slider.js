@@ -121,9 +121,7 @@ document.addEventListener('click', (event) => {
     if (card) {
       const id = card.id;
       cardId = id.split('-')[1]; 
-      console.log(cardId);
       selectedObject = globalPetsArray[cardId - 1];
-      console.log(selectedObject);
 
     }
 
@@ -135,8 +133,7 @@ document.addEventListener('click', (event) => {
    <div class="popup-image">
             <img
               src="${selectedObject.img}"
-              alt="Pet's photo"
-            />
+              alt="Pet's photo">
           </div>
           <div class="popup-text">
             <h3>${selectedObject.name}</h3>
@@ -194,7 +191,6 @@ document.addEventListener('click', (event) => {
 function createCards () {
   // Update currentCardsArray with the selected cards using the id-array with random numbers
   getObjectsByIds(generateArray());
-  console.log(currentCardsArray);
 
   // We get the parent element
   const cardContainer = document.getElementsByClassName("card-container")[0];
@@ -211,7 +207,7 @@ function createCards () {
 
     card.innerHTML = `
       <div class="card-body">
-        <img src="${cardData.img}" alt="${cardData.type} ${cardData.name}" />
+        <img src="${cardData.img}" alt="${cardData.type} ${cardData.name}">
         <h3>${cardData.name}</h3>
         <button class="card-button">Learn more</button>
       </div>

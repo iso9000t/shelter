@@ -35,7 +35,7 @@ function menuClick() {
         mobileMenu.classList.toggle('mobile-menu-hidden');
         hamburger.classList.toggle('burger-vertical');
         body.classList.toggle('no-scroll');
-        console.log(isTransitioning);
+    
 
     } else if (!mobileMenu.classList.contains('mobile-menu-hidden') && event.target.closest('.dimmed-area')) {
         isTransitioning = true;
@@ -48,7 +48,7 @@ function menuClick() {
         mobileMenu.classList.toggle('mobile-menu-hidden');
         hamburger.classList.toggle('burger-vertical');
         body.classList.toggle('no-scroll');
-        console.log(isTransitioning);
+    
     }
 }
 

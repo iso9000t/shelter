@@ -317,8 +317,7 @@ function renderCard(from, to) {
         <div class="card-body">
             <img
                 src="${cardData.img}"
-                alt="${cardData.type} ${cardData.name}"
-            />
+                alt="${cardData.type} ${cardData.name}">
             <h3>${cardData.name}</h3>
             <button class="card-button">Learn more</button>
             </div>

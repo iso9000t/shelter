@@ -7,7 +7,6 @@
         -khtml-user-drag: none;
         -moz-user-drag: none;
         -o-user-drag: none;
-        user-drag: none;
     }
 
     body,
@@ -81,7 +80,7 @@
     
         .modal-close-button:hover {
             background-color: #FDDCC4;
-    
+            cursor: pointer;
         }
 
         .dimmed-area:hover~.modal-window .modal-close-button {
@@ -100,10 +99,7 @@
             transition: box-shadow 0.3s ease-in-out;
         }
     
-        .popup-content:hover {
-    
-            box-shadow: 0px 0.2rem 3.5rem 1.4rem rgba(13, 13, 13, 0.04);
-        }
+      
     
         .popup-image img {
             width: 50rem;
@@ -570,7 +566,7 @@
 
     .address-london {
         display: flex;
-        width: 260;
+        width: 40rem;
         height: 3.2rem;
         align-items: center;
         gap: 2rem;
@@ -627,7 +623,6 @@
         -khtml-user-drag: none;
         -moz-user-drag: none;
         -o-user-drag: none;
-        user-drag: none;
     }
 
     body,
@@ -697,6 +692,7 @@
     
         .modal-close-button:hover {
             background-color: #FDDCC4;
+            cursor: pointer;
     
         }
 
@@ -713,11 +709,6 @@
             border-radius: 0.9rem;
             display: flex;
             gap: 1.1rem;
-        }
-    
-        .popup-content:hover {
-    
-            box-shadow: 0px 0.2rem 3.5rem 1.4rem rgba(13, 13, 13, 0.04);
         }
     
     
@@ -1256,7 +1247,6 @@
         -khtml-user-drag: none;
         -moz-user-drag: none;
         -o-user-drag: none;
-        user-drag: none;
     }
 
     body,
@@ -1328,7 +1318,7 @@
 
     .modal-close-button:hover {
         background-color: #FDDCC4;
-
+        cursor: pointer;
     }
 
     .dimmed-area:hover~.modal-window .modal-close-button {
@@ -1347,11 +1337,6 @@
         display: flex;
         gap: 0rem;
 
-    }
-
-    .popup-content:hover {
-
-        box-shadow: 0px 0.2rem 3.5rem 1.4rem rgba(13, 13, 13, 0.04);
     }
 
 
@@ -1471,8 +1456,7 @@
 
     width: 2.8rem;
 
-    color: rgba(241, 205, 179, 1);
-    border: 0.1rem solid rgb(241, 205, 179);
+    border: 0.1rem solid rgb(0, 0, 0, 1)
 
 }
 .burger-logo {
