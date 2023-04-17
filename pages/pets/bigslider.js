@@ -46,13 +46,12 @@ cardsContainer.addEventListener('click', (e) => {
 })
 
 layout.addEventListener('click', (e) => {
-  if (e.target.closest('.dimmed-area') || e.target.closest('.modal-close-button')) {
+  if (!e.target.closest('.popup-content') && dimmedArea.classList.contains('dimmed-area-visible')) {
     closeModalWindow();
     closeDimmedArea();
     unBlockVerticalScroll();
   }
-
- })
+});
 
 //Reveal the modal window
 function openModalWindow() {

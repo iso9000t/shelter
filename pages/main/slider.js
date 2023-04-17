@@ -175,13 +175,11 @@ document.addEventListener('click', (event) => {
   if (event.target.closest('.modal-close-button')) {
     closeModal();
   }
-  if (event.target === dimmedArea) {
-  if (!event.target.closest('.modal-window') && !dimmedArea.classList.contains('invisible')) {
+  
+
+  if (!event.target.closest('.popup-content') && dimmedArea.classList.contains('dimmed-area-visible')) {
     closeModal();
-  }
 }
-
-
 
  });
  
