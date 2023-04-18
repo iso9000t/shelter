@@ -142,7 +142,7 @@ document.addEventListener('click', (event) => {
     closeModal();
   }
 
-  if (!e.target.closest('.popup-content') && !e.target.closest('.mobile-menu') && !e.target.closest('.burger') && dimmedArea.classList.contains('dimmed-area-visible')) {
+  if (!event.target.closest('.popup-content') && !event.target.closest('.mobile-menu') && !event.target.closest('.burger') && dimmedArea.classList.contains('dimmed-area-visible')) {
     closeModal();
   }
 });
