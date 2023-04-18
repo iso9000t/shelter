@@ -46,7 +46,7 @@ cardsContainer.addEventListener('click', (e) => {
 })
 
 layout.addEventListener('click', (e) => {
-  if (!e.target.closest('.popup-content') && dimmedArea.classList.contains('dimmed-area-visible')) {
+  if (!e.target.closest('.popup-content') && !e.target.closest('.mobile-menu') && dimmedArea.classList.contains('dimmed-area-visible')) {
     closeModalWindow();
     closeDimmedArea();
     unBlockVerticalScroll();
