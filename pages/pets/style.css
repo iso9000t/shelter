@@ -72,8 +72,8 @@
              width: 5.2rem;
              border: 0.2rem solid #F1CDB3;
              border-radius: 10rem;
-             top: -5.200000000000001rem;
-             right: -4.3000000000000025rem;
+             top: -5.2rem;
+             right: -4.3rem;
              background-color: transparent;
              transition: background-color .15s ease-in-out;
          }
@@ -1307,7 +1307,7 @@
         border: 0.2rem solid #F1CDB3;
         border-radius: 10rem;
         top: 0rem;
-        right: 0rem;
+        right: 0.7rem;
         background-color: transparent;
         transition: background-color .15s ease-in-out;
     }
@@ -1326,7 +1326,7 @@
         width: 24rem;
         min-height: 34.1rem;
         top: 5.2rem;
-        right: 5rem;
+        right: 3.8rem;
         background: #FAFAFA;
         border-radius: 0.9rem;
         display: flex;
